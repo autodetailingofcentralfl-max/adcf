@@ -9,81 +9,82 @@
             font-family: Arial, sans-serif; 
             margin: 0; 
             padding: 0; 
-            background: #0a0a0a; 
+            background: linear-gradient(135deg, #0a0a0a 0%, #0f2e1f 100%); 
             color: #eee; 
             line-height: 1.7; 
         }
-        .construction {
-            background: #00c853;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            font-weight: bold;
-            font-size: 1.15em;
-        }
         header { 
-            background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), #111; 
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), #111; 
             color: white; 
             text-align: center; 
-            padding: 100px 20px 80px; 
+            padding: 110px 20px 90px; 
         }
-        .logo { width: 250px; margin-bottom: 20px; }
-        .tagline { font-size: 1.5em; opacity: 0.92; letter-spacing: 0.5px; }
-        .content { max-width: 1150px; margin: 50px auto; padding: 0 20px; }
-        h2 { color: #00c853; text-align: center; margin-bottom: 30px; font-size: 1.8em; }
+        .logo { width: 260px; margin-bottom: 20px; }
+        .tagline { font-size: 1.55em; opacity: 0.93; letter-spacing: 0.8px; }
+        .content { max-width: 1180px; margin: 50px auto; padding: 0 20px; }
+        h2 { color: #00c853; text-align: center; margin-bottom: 30px; font-size: 1.85em; }
         .highlight { 
-            background: #1a1a1a; 
+            background: rgba(26,26,26,0.95); 
             padding: 45px; 
             border-radius: 14px; 
             box-shadow: 0 6px 30px rgba(0,0,0,0.75); 
             margin-bottom: 55px; 
         }
         .phone { 
-            font-size: 2.4em; 
+            font-size: 2.45em; 
             font-weight: bold; 
             color: #00c853; 
             text-align: center; 
             margin: 55px 0; 
-            padding: 25px; 
+            padding: 28px; 
             background: #1f1f1f; 
             border-radius: 14px; 
             border: 2px solid #00c853; 
         }
         .qr-container {
             text-align: center;
-            margin: 50px 0 60px;
+            margin: 50px 0 70px;
         }
         .qr-container img {
             width: 200px;
             border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.85);
             background: white;
             padding: 12px;
         }
         .gallery { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
-            gap: 22px; 
-            margin: 60px 0; 
+            gap: 24px; 
+            margin: 70px 0; 
         }
         .gallery img { 
             width: 100%; 
             border-radius: 12px; 
-            box-shadow: 0 8px 28px rgba(0,0,0,0.85); 
+            box-shadow: 0 10px 32px rgba(0,0,0,0.9); 
+            transition: all 0.4s ease;
+        }
+        .gallery img:hover { 
+            transform: scale(1.04); 
+            box-shadow: 0 15px 40px rgba(0, 200, 83, 0.35); 
+        }
+        .policy {
+            background: rgba(26,26,26,0.95);
+            padding: 40px;
+            border-radius: 14px;
+            margin: 70px 0 50px;
+            font-size: 0.96em;
+            line-height: 1.85;
         }
         footer { 
             text-align: center; 
-            padding: 70px 20px 40px; 
+            padding: 80px 20px 50px; 
             background: #000; 
             color: #777; 
         }
     </style>
 </head>
 <body>
-
-    <div class="construction">
-        🚧 Website Under Construction — Full details & booking coming soon
-    </div>
 
     <header>
         <img src="adcflogo.jpeg" alt="A.D.C.F Logo" class="logo">
@@ -116,6 +117,14 @@
             <img src="gmc.jpeg" alt="GMC Yukon">
             <img src="highlander.jpeg" alt="Toyota Grand Highlander">
             <img src="porschegt3.jpeg" alt="Porsche GT3 RS">
+        </div>
+
+        <div class="policy">
+            <h2>Privacy Policy</h2>
+            <p>We respect your privacy. We only use your contact information to send appointment reminders, service updates, and occasional holiday greetings. We do not sell or share your data with third parties for marketing purposes. You can reply STOP at any time to opt out.</p>
+            
+            <h2>Terms & Conditions</h2>
+            <p>By contacting us, you agree to receive messages from Hermie regarding your appointments and services. Messages and data rates may apply. Reply STOP to unsubscribe. All services are subject to vehicle size, condition, and scheduling availability. We aim to provide high-quality mobile auto detailing with care and professionalism.</p>
         </div>
 
         <p style="text-align:center; font-size:1.25em; margin-top:60px;">
