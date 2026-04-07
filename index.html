@@ -10,33 +10,33 @@
             margin: 0; 
             padding: 0; 
             background: #0a0a0a; 
-            color: #ddd; 
+            color: #eee; 
             line-height: 1.7; 
         }
         .construction {
             background: #ff3b3b;
             color: white;
             text-align: center;
-            padding: 12px;
+            padding: 14px;
             font-weight: bold;
-            font-size: 1.1em;
+            font-size: 1.15em;
         }
         header { 
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), #111; 
+            background: linear-gradient(rgba(0,0,0,0.92), rgba(0,0,0,0.92)), #111; 
             color: white; 
             text-align: center; 
-            padding: 90px 20px 70px; 
+            padding: 100px 20px 80px; 
         }
-        .logo { width: 240px; margin-bottom: 20px; }
-        .tagline { font-size: 1.45em; opacity: 0.95; }
-        .content { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        h2 { color: #ff3b3b; text-align: center; margin-bottom: 25px; }
+        .logo { width: 250px; margin-bottom: 20px; }
+        .tagline { font-size: 1.5em; opacity: 0.92; letter-spacing: 0.5px; }
+        .content { max-width: 1150px; margin: 50px auto; padding: 0 20px; }
+        h2 { color: #ff3b3b; text-align: center; margin-bottom: 30px; font-size: 1.8em; }
         .highlight { 
             background: #1a1a1a; 
-            padding: 40px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 25px rgba(0,0,0,0.7); 
-            margin-bottom: 50px; 
+            padding: 45px; 
+            border-radius: 14px; 
+            box-shadow: 0 6px 30px rgba(0,0,0,0.75); 
+            margin-bottom: 55px; 
         }
         .phone { 
             font-size: 2.4em; 
@@ -44,33 +44,50 @@
             color: #ff3b3b; 
             text-align: center; 
             margin: 50px 0; 
-            padding: 20px; 
-            background: #1a1a1a; 
-            border-radius: 12px; 
+            padding: 25px; 
+            background: #1f1f1f; 
+            border-radius: 14px; 
+            border: 2px solid #ff3b3b; 
+        }
+        .qr-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .qr-container img {
+            width: 180px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+            background: white;
+            padding: 10px;
         }
         .gallery { 
             display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 20px; 
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
+            gap: 22px; 
             margin: 60px 0; 
         }
         .gallery img { 
             width: 100%; 
             border-radius: 12px; 
-            box-shadow: 0 8px 25px rgba(0,0,0,0.8); 
+            box-shadow: 0 8px 28px rgba(0,0,0,0.85); 
+            transition: all 0.4s ease;
+        }
+        .gallery img:hover { 
+            transform: scale(1.04); 
+            box-shadow: 0 12px 35px rgba(255, 60, 60, 0.3); 
         }
         footer { 
             text-align: center; 
-            padding: 60px 20px; 
+            padding: 70px 20px 40px; 
             background: #000; 
-            color: #888; 
+            color: #777; 
         }
     </style>
 </head>
 <body>
 
     <div class="construction">
-        🚧 Website Under Construction — Full booking & details coming soon
+        🚧 Website Under Construction — Full details & booking coming soon
     </div>
 
     <header>
@@ -91,6 +108,11 @@
             📞 Call or Text: <strong>407-561-4200</strong>
         </div>
 
+        <div class="qr-container">
+            <p>Scan to visit our site:</p>
+            <img src="YOUR-QR-CODE-FILENAME.jpg" alt="QR Code">
+        </div>
+
         <h2>Our Work</h2>
         <div class="gallery">
             <img src="cadillac.jpeg" alt="Cadillac LYRIQ">
@@ -101,7 +123,7 @@
             <img src="porschegt3.jpeg" alt="Porsche GT3 RS">
         </div>
 
-        <p style="text-align:center; font-size:1.2em; margin-top:50px;">
+        <p style="text-align:center; font-size:1.25em; margin-top:60px;">
             Ready to give your car the treatment it deserves?<br>
             <strong>Text or call us today</strong> — we're happy to help you choose the right service.
         </p>
