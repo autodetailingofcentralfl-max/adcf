@@ -15,4 +15,5 @@ Then open `http://localhost:8080`.
 ## Primary CTA
 
 Text to book: `sms:+14075614200` (407-561-4200)  
-Call: `tel:+14075614200` (407-561-4200)
+Call: `tel:+14075614200` (407-561-4200)  
+Gift cards: https://app.squareup.com/gift/TC1XD7V8T3Y7S/order
