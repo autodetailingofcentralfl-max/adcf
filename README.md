@@ -14,5 +14,5 @@ Then open `http://localhost:8080`.
 
 ## Primary CTA
 
-Text to book: `sms:+18332396641` (833-239-6641)  
+Text to book: `sms:+14075614200` (407-561-4200)  
 Call: `tel:+14075614200` (407-561-4200)
