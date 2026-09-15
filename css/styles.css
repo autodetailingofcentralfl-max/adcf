@@ -323,6 +323,28 @@ a:hover {
   margin: 0;
 }
 
+.pricing-note,
+.section-head .pricing-note {
+  color: var(--gold);
+  font-weight: 600;
+  max-width: 40rem;
+  margin: 0.75rem 0 0;
+}
+
+.page-hero .pricing-note {
+  margin-bottom: 0.25rem;
+}
+
+.page-hero .lede + .pricing-note {
+  margin-top: 0.85rem;
+}
+
+.package-card .btn {
+  align-self: flex-start;
+  text-align: center;
+  white-space: normal;
+}
+
 .page-hero {
   padding: 2.75rem 0 1.5rem;
   border-bottom: 1px solid var(--line);
