@@ -307,6 +307,11 @@ a:hover {
     padding-bottom: 5.25rem;
   }
 
+  .hero h1 {
+    max-width: none;
+    font-size: 2.05rem;
+  }
+
   .hero-tagline {
     margin-bottom: 0.7rem;
   }
