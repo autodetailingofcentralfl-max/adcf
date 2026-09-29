@@ -63,6 +63,80 @@
   </header>
 
   <main id="main">
+    <section class="work-film" aria-labelledby="see-us-work-title">
+      <div class="wrap">
+        <div class="work-film-intro">
+          <p class="eyebrow" id="see-us-work-title">See us work</p>
+          <p class="work-film-lede">Henry wiping down a car interior on location.</p>
+        </div>
+        <div class="work-film-frame">
+          <video
+            controls
+            playsinline
+            preload="metadata"
+            poster="images/see-us-work-poster.jpg"
+            width="720"
+            height="1280"
+            aria-label="Henry wiping down a car interior on location"
+          >
+            <source src="videos/see-us-work.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-lead" id="quote" aria-labelledby="home-lead-title">
+      <div class="wrap">
+        <div class="lead-card">
+          <form class="lead-form" data-lead-form data-lead-source="adcf.us homepage" data-lead-from="ADCF Homepage" action="https://api.web3forms.com/submit" method="post" novalidate>
+            <h2 id="home-lead-title">Tell us the vehicle.</h2>
+            <p class="lead-note">Name, phone, and the car. We’ll text a ballpark. No email needed.</p>
+
+            <div class="field">
+              <label for="lead-name">Name</label>
+              <input id="lead-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="lead-name-error">
+              <p class="field-error" id="lead-name-error" data-error-for="name"></p>
+            </div>
+
+            <div class="field">
+              <label for="lead-phone">Phone</label>
+              <input id="lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="32" aria-describedby="lead-phone-error">
+              <p class="field-error" id="lead-phone-error" data-error-for="phone"></p>
+            </div>
+
+            <div class="field">
+              <label for="lead-vehicle">Vehicle</label>
+              <input id="lead-vehicle" name="vehicle" type="text" autocomplete="off" required maxlength="120" placeholder="2019 Honda Civic, or SUV" aria-describedby="lead-vehicle-hint lead-vehicle-error">
+              <p class="field-hint" id="lead-vehicle-hint">Year, make, and model, or the body type.</p>
+              <p class="field-error" id="lead-vehicle-error" data-error-for="vehicle"></p>
+            </div>
+
+            <p class="hp">
+              <label for="lead-botcheck">Leave this unchecked</label>
+              <input id="lead-botcheck" name="botcheck" type="checkbox" tabindex="-1" autocomplete="off">
+            </p>
+
+            <p class="form-alert" data-lead-alert role="alert" hidden></p>
+            <button class="btn btn-primary" type="submit">Send my info</button>
+          </form>
+
+          <div class="form-success" data-lead-success role="status" hidden>
+            <h2 tabindex="-1">Got it.</h2>
+            <p>We’ll text you a ballpark for that vehicle. Keep your phone nearby.</p>
+          </div>
+
+          <p class="quote-call">
+            <a href="sms:+14075614200">Text 407-561-4200</a>
+            ·
+            <a href="tel:+14075614200">Call 407-561-4200</a>
+          </p>
+          <noscript>
+            <p class="form-alert">This form needs JavaScript to send. Text or call 407-561-4200 and tell us the vehicle.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
     <section class="hero">
       <div class="wrap">
         <p class="hero-kicker">Kissimmee · Orlando · Central Florida</p>
@@ -261,5 +335,7 @@
     <a class="btn btn-ghost" href="tel:+14075614200">Call</a>
   </div>
   <script src="js/site.js"></script>
+  <script src="js/lead-config.js"></script>
+  <script src="js/lead-form.js"></script>
 </body>
 </html>
