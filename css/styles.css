@@ -921,6 +921,62 @@ a:hover {
   border: 0;
 }
 
+@media (max-width: 859px) {
+  .quote-page {
+    padding: 1.05rem 0 2.25rem;
+  }
+
+  .quote-grid {
+    gap: 0.7rem;
+  }
+
+  .quote-copy {
+    display: contents;
+  }
+
+  .quote-copy .eyebrow {
+    order: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .quote-copy h1 {
+    order: 2;
+    font-size: 1.72rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .lead-card {
+    order: 3;
+    padding: 1rem 0.95rem 0.85rem;
+  }
+
+  .quote-details {
+    order: 4;
+  }
+
+  .quote-details .hero-tagline {
+    font-size: 1.2rem;
+    margin: 0.35rem 0 0.45rem;
+  }
+
+  .quote-details .lede {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+
+  .lead-form h2 {
+    font-size: 1.28rem;
+  }
+
+  .lead-note {
+    margin-bottom: 0.65rem;
+  }
+
+  .field {
+    margin-bottom: 0.1rem;
+  }
+}
+
 @media (min-width: 860px) {
   .quote-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
