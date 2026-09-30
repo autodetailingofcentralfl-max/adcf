@@ -7,38 +7,33 @@
   var submitBtn = form.querySelector("[type=submit]");
   var fields = {
     name: form.querySelector("[name=name]"),
-    phone: form.querySelector("[name=phone]"),
-    vehicle: form.querySelector("[name=vehicle]")
+    vehicle: form.querySelector("[name=vehicle]"),
+    zip: form.querySelector("[name=zip]")
   };
 
   function clean(value, max) {
     return String(value || "").replace(/\s+/g, " ").trim().slice(0, max);
   }
 
-  function digits(value) {
-    return String(value || "").replace(/\D/g, "");
-  }
-
   function validate() {
     var name = clean(fields.name.value, 80);
-    var phone = clean(fields.phone.value, 32);
     var vehicle = clean(fields.vehicle.value, 120);
-    var phoneDigits = digits(phone);
+    var zip = clean(fields.zip.value, 5);
     var errors = {};
 
     if (name.length < 2) errors.name = "Enter your name.";
-    if (phoneDigits.length < 10 || phoneDigits.length > 15) {
-      errors.phone = "Enter a phone number we can text.";
-    }
     if (vehicle.length < 2) {
       errors.vehicle = "Enter the year, make, and model, or the body type.";
     }
+    if (!/^\d{5}$/.test(zip)) {
+      errors.zip = "Enter a 5-digit ZIP code.";
+    }
 
-    return { errors: errors, name: name, phone: phone, vehicle: vehicle };
+    return { errors: errors, name: name, vehicle: vehicle, zip: zip };
   }
 
   function showErrors(errors) {
-    ["name", "phone", "vehicle"].forEach(function (key) {
+    ["name", "vehicle", "zip"].forEach(function (key) {
       var input = fields[key];
       var message = form.querySelector('[data-error-for="' + key + '"]');
       var invalid = Boolean(errors[key]);
@@ -98,12 +93,12 @@
 
     var payload = {
       access_key: key,
-      subject: "Ad lead: " + result.name + " — " + result.vehicle,
-      from_name: form.getAttribute("data-lead-from") || "ADCF Get Quote",
+      subject: "Ad lead: " + result.name + " — " + result.vehicle + " — " + result.zip,
+      from_name: form.getAttribute("data-lead-from") || "ADCF Homepage",
       name: result.name,
-      phone: result.phone,
       vehicle: result.vehicle,
-      source: form.getAttribute("data-lead-source") || "adcf.us/get-quote (Meta ad)"
+      zip: result.zip,
+      source: form.getAttribute("data-lead-source") || "adcf.us homepage"
     };
 
     fetch("https://api.web3forms.com/submit", {

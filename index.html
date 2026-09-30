@@ -90,7 +90,7 @@
         <div class="lead-card">
           <form class="lead-form" data-lead-form data-lead-source="adcf.us homepage" data-lead-from="ADCF Homepage" action="https://api.web3forms.com/submit" method="post" novalidate>
             <h2 id="home-lead-title">Tell us the vehicle.</h2>
-            <p class="lead-note">Name, phone, and the car. We’ll text a ballpark. No email needed.</p>
+            <p class="lead-note">Your name, the car, and your ZIP.</p>
 
             <div class="field">
               <label for="lead-name">Name</label>
@@ -99,16 +99,16 @@
             </div>
 
             <div class="field">
-              <label for="lead-phone">Phone</label>
-              <input id="lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="32" aria-describedby="lead-phone-error">
-              <p class="field-error" id="lead-phone-error" data-error-for="phone"></p>
-            </div>
-
-            <div class="field">
               <label for="lead-vehicle">Vehicle</label>
               <input id="lead-vehicle" name="vehicle" type="text" autocomplete="off" required maxlength="120" placeholder="2019 Honda Civic, or SUV" aria-describedby="lead-vehicle-hint lead-vehicle-error">
               <p class="field-hint" id="lead-vehicle-hint">Year, make, and model, or the body type.</p>
               <p class="field-error" id="lead-vehicle-error" data-error-for="vehicle"></p>
+            </div>
+
+            <div class="field">
+              <label for="lead-zip">ZIP code</label>
+              <input id="lead-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" required maxlength="5" pattern="[0-9]{5}" aria-describedby="lead-zip-error">
+              <p class="field-error" id="lead-zip-error" data-error-for="zip"></p>
             </div>
 
             <p class="hp">
@@ -122,7 +122,7 @@
 
           <div class="form-success" data-lead-success role="status" hidden>
             <h2 tabindex="-1">Got it.</h2>
-            <p>We’ll text you a ballpark for that vehicle. Keep your phone nearby.</p>
+            <p>We have your name, the vehicle, and the ZIP.</p>
           </div>
 
           <p class="quote-call">
