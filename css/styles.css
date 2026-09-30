@@ -925,42 +925,6 @@ a:hover {
   border: 0;
 }
 
-.work-film {
-  padding: 1.35rem 0 0.35rem;
-  background:
-    radial-gradient(900px 280px at 50% 0%, rgba(211, 18, 34, 0.18), transparent 62%),
-    var(--bg);
-}
-
-.work-film-intro {
-  width: min(100%, 24rem);
-  margin: 0 auto 0.85rem;
-  text-align: center;
-}
-
-.work-film-intro .eyebrow {
-  margin-bottom: 0.35rem;
-}
-
-.work-film-lede {
-  color: var(--muted);
-  margin: 0;
-}
-
-.work-film-frame {
-  width: min(100%, 24rem);
-  margin-inline: auto;
-}
-
-.work-film video {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: #000;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
 .home-lead {
   padding: 1.15rem 0 2.75rem;
   background: var(--bg);
@@ -1024,10 +988,6 @@ a:hover {
 
   .field {
     margin-bottom: 0.1rem;
-  }
-
-  .work-film {
-    padding-top: 1rem;
   }
 }
 
