@@ -22,7 +22,7 @@ Gift cards: https://app.squareup.com/gift/TC1XD7V8T3Y7S/order
 
 Stable URL for the Meta “Learn more” button: <https://adcf.us/get-quote/>
 
-The page collects name, phone, and vehicle, then emails `autodetailingofcentralfl@gmail.com`. There is no lead email field. The phone number on the page is a secondary call link only. Submissions are sent by [Web3Forms](https://web3forms.com/) because this site is static GitHub Pages and has no form backend.
+The page collects name, vehicle, and ZIP code, then emails `autodetailingofcentralfl@gmail.com`. 407-561-4200 stays on the page as a secondary call link. Submissions are sent by [Web3Forms](https://web3forms.com/) because this site is static GitHub Pages and has no form backend.
 
 The email subject starts with `Ad lead` so a Gmail filter can label them. Suggested filter: subject contains `Ad lead`.
 
@@ -34,7 +34,7 @@ GitHub Pages cannot read a server secret. The Web3Forms access key is a public i
 2. Open the confirmation email in that Gmail inbox and copy the access key.
 3. Paste it into `js/lead-config.js` as `window.ADCF_LEAD_ACCESS_KEY`.
 4. Commit and wait for GitHub Pages to publish.
-5. Submit one real test from `/get-quote/` and confirm the message arrives with a subject like `Ad lead: Jane Doe — 2019 Honda Civic`.
+5. Submit one real test from `/get-quote/` and confirm the message arrives with a subject like `Ad lead: Jane Doe — 2019 Honda Civic (34741)`.
 6. Optional: in the Web3Forms dashboard, restrict the key to `adcf.us`.
 
 Check Web3Forms’ current free-plan monthly cap before sending ad traffic. Do not point the live Meta ad at this URL until step 5 succeeds.
@@ -47,7 +47,7 @@ python3 -m http.server 8080
 
 Open `http://localhost:8080/get-quote/`.
 
-- Submit empty fields: name, phone, and vehicle each show an error.
-- Enter a phone with fewer than 10 digits: phone error only.
-- Submit valid name, phone, and vehicle before the access key is set: the form stays up and shows the call fallback. Nothing is emailed.
+- Submit empty fields: name, vehicle, and ZIP code each show an error.
+- Enter a ZIP that is not exactly 5 digits: ZIP error only.
+- Submit valid name, vehicle, and ZIP before the access key is set: the form stays up and shows the call fallback. Nothing is emailed.
 - After the key is set, the same submit shows “Got it.” and the inbox receives the lead.

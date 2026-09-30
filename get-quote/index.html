@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Get a Quote | A.D.C.F. Mobile Detailing</title>
-  <meta name="description" content="Tell Auto Detailing of Central Florida your name, phone, and vehicle. We’ll text a ballpark for mobile detailing. No email needed.">
+  <meta name="description" content="Tell Auto Detailing of Central Florida your name, vehicle, and ZIP code for a mobile detailing quote.">
   <link rel="canonical" href="https://adcf.us/get-quote/">
   <meta property="og:title" content="Get a Quote | A.D.C.F. Mobile Detailing">
-  <meta property="og:description" content="Name, phone, and the vehicle. We’ll text a ballpark. Your car runs better when it's clean.">
+  <meta property="og:description" content="Name, vehicle, and ZIP code. Your car runs better when it's clean.">
   <meta property="og:url" content="https://adcf.us/get-quote/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://adcf.us/images/gallery/cadillac-lyriq.jpg">
@@ -47,10 +47,10 @@
       <div class="wrap quote-grid">
         <div class="quote-copy">
           <p class="eyebrow">Get a quote</p>
-          <h1>Tell us the vehicle. We’ll text a ballpark.</h1>
+          <h1>Tell us the vehicle and your ZIP.</h1>
           <div class="quote-details">
             <p class="hero-tagline">Your car runs better when it's clean.</p>
-            <p class="lede">Mobile auto detailing across Central Florida. Name, phone, and the vehicle are enough — year, make, and model, or just the body type.</p>
+            <p class="lede">Mobile auto detailing across Central Florida. Year, make, and model, or just the body type, plus a 5-digit ZIP.</p>
             <p class="pricing-note">Pricing depends on vehicle size and condition. <a href="../services.html">See packages</a>.</p>
           </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="lead-card">
           <form class="lead-form" data-lead-form action="https://api.web3forms.com/submit" method="post" novalidate>
             <h2>Request a quote</h2>
-            <p class="lead-note">We’ll text you. No email needed.</p>
+            <p class="lead-note">Name, the vehicle, and a 5-digit ZIP.</p>
 
             <div class="field">
               <label for="lead-name">Name</label>
@@ -67,16 +67,16 @@
             </div>
 
             <div class="field">
-              <label for="lead-phone">Phone</label>
-              <input id="lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="32" aria-describedby="lead-phone-error">
-              <p class="field-error" id="lead-phone-error" data-error-for="phone"></p>
-            </div>
-
-            <div class="field">
               <label for="lead-vehicle">Vehicle</label>
               <input id="lead-vehicle" name="vehicle" type="text" autocomplete="off" required maxlength="120" placeholder="2019 Honda Civic, or SUV" aria-describedby="lead-vehicle-hint lead-vehicle-error">
               <p class="field-hint" id="lead-vehicle-hint">Year, make, and model, or the body type.</p>
               <p class="field-error" id="lead-vehicle-error" data-error-for="vehicle"></p>
+            </div>
+
+            <div class="field">
+              <label for="lead-zip">ZIP code</label>
+              <input id="lead-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" required maxlength="10" aria-describedby="lead-zip-error">
+              <p class="field-error" id="lead-zip-error" data-error-for="zip"></p>
             </div>
 
             <p class="hp">
@@ -90,7 +90,7 @@
 
           <div class="form-success" data-lead-success role="status" hidden>
             <h2 tabindex="-1">Got it.</h2>
-            <p>We’ll text you a ballpark for that vehicle. Keep your phone nearby.</p>
+            <p>We have the vehicle and ZIP. Call if you want the ballpark now.</p>
           </div>
 
           <p class="quote-call">Prefer to call? <a href="tel:+14075614200">407-561-4200</a></p>
