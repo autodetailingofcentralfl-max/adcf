@@ -15,4 +15,4 @@
 //    and confirm the email subject starts with "Ad lead".
 //
 // Optional: in the Web3Forms dashboard, limit the key to adcf.us.
-window.ADCF_LEAD_ACCESS_KEY = "";
+window.ADCF_LEAD_ACCESS_KEY = "8b6e032b-05f4-497a-934d-c5f1c23941ea";
