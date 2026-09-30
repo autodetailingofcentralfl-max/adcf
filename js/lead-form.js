@@ -94,11 +94,11 @@
     var payload = {
       access_key: key,
       subject: "Ad lead: " + result.name + " — " + result.vehicle + " (" + result.zip + ")",
-      from_name: "ADCF Get Quote",
+      from_name: form.getAttribute("data-lead-from") || "ADCF Get Quote",
       name: result.name,
       vehicle: result.vehicle,
       zip: result.zip,
-      source: "adcf.us/get-quote (Meta ad)"
+      source: form.getAttribute("data-lead-source") || "adcf.us/get-quote (Meta ad)"
     };
 
     fetch("https://api.web3forms.com/submit", {
