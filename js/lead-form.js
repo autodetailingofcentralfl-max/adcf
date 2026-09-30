@@ -18,7 +18,7 @@
   function validate() {
     var name = clean(fields.name.value, 80);
     var vehicle = clean(fields.vehicle.value, 120);
-    var zip = clean(fields.zip.value, 5);
+    var zip = clean(fields.zip.value, 10);
     var errors = {};
 
     if (name.length < 2) errors.name = "Enter your name.";
@@ -93,7 +93,7 @@
 
     var payload = {
       access_key: key,
-      subject: "Ad lead: " + result.name + " — " + result.vehicle + " — " + result.zip,
+      subject: "Ad lead: " + result.name + " — " + result.vehicle + " (" + result.zip + ")",
       from_name: form.getAttribute("data-lead-from") || "ADCF Homepage",
       name: result.name,
       vehicle: result.vehicle,

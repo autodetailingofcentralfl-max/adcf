@@ -784,6 +784,10 @@ a:hover {
   margin: 0 0 0.35rem;
 }
 
+.lead-form .pricing-note {
+  margin: 0 0 0.9rem;
+}
+
 .lead-note,
 .field-hint,
 .quote-call {
