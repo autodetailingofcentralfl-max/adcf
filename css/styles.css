@@ -945,6 +945,11 @@ a:hover {
     margin-bottom: 0.15rem;
   }
 
+  .quote-price {
+    order: 2;
+    margin-top: 0.35rem;
+  }
+
   .lead-card {
     order: 3;
     padding: 1rem 0.95rem 0.85rem;

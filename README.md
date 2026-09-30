@@ -22,7 +22,7 @@ Gift cards: https://app.squareup.com/gift/TC1XD7V8T3Y7S/order
 
 Stable URL for the Meta “Learn more” button: <https://adcf.us/get-quote/>
 
-The page collects name, vehicle, and ZIP code, then emails `autodetailingofcentralfl@gmail.com`. 407-561-4200 stays on the page as a secondary call link. Submissions are sent by [Web3Forms](https://web3forms.com/) because this site is static GitHub Pages and has no form backend.
+The page collects name, vehicle, and ZIP code, then emails `autodetailingofcentralfl@gmail.com`. Copy on the page says the Freshen-Up starts at $80, and that the final quote depends on vehicle size and condition. 407-561-4200 stays on the page as a secondary call link. Submissions are sent by [Web3Forms](https://web3forms.com/) because this site is static GitHub Pages and has no form backend.
 
 The email subject starts with `Ad lead` so a Gmail filter can label them. Suggested filter: subject contains `Ad lead`.
 
