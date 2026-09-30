@@ -763,6 +763,39 @@ a:hover {
   }
 }
 
+.page-quote .mobile-cta {
+  display: none;
+}
+
+.page-quote .site-footer {
+  padding-bottom: 3rem;
+}
+
+.quote-page {
+  padding: 2.25rem 0 3.25rem;
+  background:
+    radial-gradient(1200px 320px at 12% 0%, rgba(211, 18, 34, 0.16), transparent 55%),
+    var(--bg);
+}
+
+.quote-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.quote-copy h1 {
+  font-family: var(--display);
+  font-size: clamp(1.9rem, 5vw, 3.05rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.7rem;
+}
+
+.quote-copy .lede {
+  margin-top: 0.85rem;
+}
+
 .lead-card {
   background: var(--bg-2);
   border: 1px solid var(--line);
@@ -939,8 +972,46 @@ a:hover {
 }
 
 @media (max-width: 859px) {
+  .quote-page {
+    padding: 1.05rem 0 2.25rem;
+  }
+
+  .quote-grid {
+    gap: 0.7rem;
+  }
+
+  .quote-copy {
+    display: contents;
+  }
+
+  .quote-copy .eyebrow {
+    order: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .quote-copy h1 {
+    order: 2;
+    font-size: 1.72rem;
+    margin-bottom: 0.15rem;
+  }
+
   .lead-card {
+    order: 3;
     padding: 1rem 0.95rem 0.85rem;
+  }
+
+  .quote-details {
+    order: 4;
+  }
+
+  .quote-details .hero-tagline {
+    font-size: 1.2rem;
+    margin: 0.35rem 0 0.45rem;
+  }
+
+  .quote-details .lede {
+    font-size: 1rem;
+    margin-top: 0;
   }
 
   .lead-form h2 {
@@ -961,6 +1032,11 @@ a:hover {
 }
 
 @media (min-width: 860px) {
+  .quote-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+    gap: 2.5rem;
+  }
+
   .lead-card {
     padding: 1.5rem 1.4rem 1.3rem;
   }

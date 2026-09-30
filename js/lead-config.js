@@ -11,7 +11,7 @@
 // 2. Confirm the message in that Gmail inbox and copy the access key.
 // 3. Paste the key below, between the quotes.
 // 4. Commit this file and wait for GitHub Pages to publish.
-// 5. Submit a test from the homepage (and /get-quote/ if that page is live)
+// 5. Submit a test from https://adcf.us/ and from https://adcf.us/get-quote/
 //    and confirm the email subject starts with "Ad lead".
 //
 // Optional: in the Web3Forms dashboard, limit the key to adcf.us.
