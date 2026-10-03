@@ -18,9 +18,9 @@ Text to book: `sms:+14075614200` (407-561-4200)
 Call: `tel:+14075614200` (407-561-4200)  
 Gift cards: https://app.squareup.com/gift/TC1XD7V8T3Y7S/order
 
-## Homepage lead form
+## Quote form
 
-The homepage quote form sits at the bottom, after the intro and services. It collects name, vehicle, and ZIP code. It does not ask for a phone number or an email address. Copy next to the form says the Freshen-Up starts at $80, and that pricing depends on vehicle size and condition. Submissions email `autodetailingofcentralfl@gmail.com` through [Web3Forms](https://web3forms.com/). The subject starts with `Ad lead`. Text and call links for 407-561-4200 sit under the form. The same form is also on [Get a quote](https://adcf.us/get-quote/), linked in the main nav.
+The quote form lives only on [Get a quote](https://adcf.us/get-quote/), linked in the main nav. The homepage does not include it. The form collects name, vehicle, and ZIP code. It does not ask for a phone number or an email address. Copy on the page says the Freshen-Up starts at $80, and that pricing depends on vehicle size and condition. Submissions email `autodetailingofcentralfl@gmail.com` through [Web3Forms](https://web3forms.com/). The subject starts with `Ad lead`.
 
 The Web3Forms access key stays blank in `js/lead-config.js` until Henry pastes it. Until then the form validates, then tells the visitor to call. It does not send email.
 
